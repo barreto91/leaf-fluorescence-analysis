@@ -46,7 +46,7 @@ The software environment is specified in `environment.yml`. The instructions bel
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/leaf-fluorescence-analysis.git
+git clone https://github.com/barreto91/leaf-fluorescence-analysis.git
 cd leaf-fluorescence-analysis
 ```
 
