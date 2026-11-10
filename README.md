@@ -58,8 +58,6 @@ conda activate conda env create -f environment.yml
 conda activate leaf-fluorescence-analysis
 ```
 
-> **Note:** The environment name in the activation command must match the `name:` field in `environment.yml`. If that field has a different value, use that name instead.
-
 ## Running the example pipeline
 
 The commands below assume that the repository has the directory structure shown above and that the example visible-light and UV images are stored in `data/source/vis/` and `data/source/uv/`, respectively.
@@ -81,8 +79,6 @@ python coverage_analysis/02_spatial_partitioning.py --mask_folder "data/processe
 This step creates one subdirectory for each section: `top_left`, `top_right`, `bottom_left`, and `bottom_right`.
 
 ### 3. Detect fluorescent tracer
-
-**Check the input directory name:** the original README used `leaf_seg` for this script, whereas Step 2 writes to `leaf_segments`. Confirm which directory name the script expects before running this command. The command below retains the original `leaf_seg` argument.
 
 ```bash
 python coverage_analysis/03_masking_tracer.py --leaf_mask_folder "data/processed/leaf_mask" --leaf_seg_folder "data/processed/leaf_segments" --uv_folder "data/source/uv" --mask_output_folder "data/processed/fluorescence_mask" --overlay_output_folder "data/processed/fluorescence_overlay"
