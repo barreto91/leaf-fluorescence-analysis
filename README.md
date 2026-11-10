@@ -54,7 +54,8 @@ Create and activate the Conda environment:
 
 ```bash
 conda env create -f environment.yml
-conda activate coverage-analysis
+conda activate conda env create -f environment.yml
+conda activate leaf-fluorescence-analysis
 ```
 
 > **Note:** The environment name in the activation command must match the `name:` field in `environment.yml`. If that field has a different value, use that name instead.
