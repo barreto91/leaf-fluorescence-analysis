@@ -85,7 +85,7 @@ This step creates one subdirectory for each section: `top_left`, `top_right`, `b
 **Check the input directory name:** the original README used `leaf_seg` for this script, whereas Step 2 writes to `leaf_segments`. Confirm which directory name the script expects before running this command. The command below retains the original `leaf_seg` argument.
 
 ```bash
-python coverage_analysis/03_masking_tracer.py --leaf_mask_folder "data/processed/leaf_mask" --leaf_seg_folder "data/processed/leaf_seg" --uv_folder "data/source/uv" --mask_output_folder "data/processed/fluorescence_mask" --overlay_output_folder "data/processed/fluorescence_overlay"
+python coverage_analysis/03_masking_tracer.py --leaf_mask_folder "data/processed/leaf_mask" --leaf_seg_folder "data/processed/leaf_segments" --uv_folder "data/source/uv" --mask_output_folder "data/processed/fluorescence_mask" --overlay_output_folder "data/processed/fluorescence_overlay"
 ```
 
 ### 4. Calculate tracer distribution metrics
